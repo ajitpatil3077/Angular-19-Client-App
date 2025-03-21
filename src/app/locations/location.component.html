@@ -1,0 +1,12 @@
+<!-- <select [(ngModel)]="country" (change)="setState()">
+  <option value="India">India</option>
+  <option value="US">US</option>
+</select>
+
+<select>
+<option *ngFor="let state of states" value="state">{{state}}</option>
+</select> -->
+
+<select [(ngModel)]="country" (change)="setState()">
+  <option *ngFor="let location of locations" value="id">{{country}}</option>
+  </select>

@@ -1,0 +1,21 @@
+<div>
+<p>{{message | uppercase}}</p>
+<p>{{message | titlecase}}</p>
+<p>{{message | lowercase}}</p>
+<p>{{today | date:'fullDate' | uppercase }}</p>
+<p>{{today | date:'hh:mm:ss'}}</p>
+<p>{{amount | currency:'USD'}}</p>
+<!-- <h1>Ajit Login Please</h1> -->
+<!-- <input (input)="getUserId($event)" type="text" placeholder="Enter user id" #userIdField/> -->
+<input type="text" placeholder="Enter user id" #userIdField/>
+<button (click)="getUserIdTemplate(userIdField.value)">GetUser</button>
+<div>
+    <li>{{user.id }}</li>
+    <li>{{user.first_name }}</li>
+    <li>{{user.last_name }}</li>
+    <li>{{user.email }}</li>
+    <li>{{user.gender }}</li>
+    <li>{{user.ip_address }}</li>
+    <li>{{user.job_title }}</li>
+</div>
+</div>
